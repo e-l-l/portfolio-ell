@@ -21,11 +21,7 @@ export default function Home() {
       </div>
 
       {/* Chat Input Section */}
-      <Card className="w-full max-w-3xl glass-effect border-zinc-800 mb-12 bg-zinc-900/70">
-        <CardContent className="p-8">
-          <ChatInput />
-        </CardContent>
-      </Card>
+      <ChatInput minHeight="120px" />
 
       {/* Features */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl w-full mt-8">

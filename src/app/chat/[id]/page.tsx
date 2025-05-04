@@ -169,15 +169,15 @@ export default function ChatPage() {
   if (!chat) return <div className="container mx-auto p-8">Loading...</div>;
 
   return (
-    <div className="container mx-auto px-4 max-w-5xl min-h-screen pt-8 pb-8">
-      <div className="glass-effect rounded-2xl p-4 min-h-[calc(100vh-100px)] flex flex-col">
+    <div className="fixed inset-0 flex flex-col">
+      <div className="flex-1 flex flex-col bg-zinc-900">
         {/* Chat header */}
-        <div className="border-b border-zinc-800 pb-4 mb-4">
+        <div className="border-b border-zinc-800 p-4">
           <h1 className="text-2xl font-bold">{chat.title}</h1>
         </div>
 
         {/* Messages */}
-        <div className="flex-1 space-y-4 overflow-y-auto py-4 px-2">
+        <div className="flex-1 space-y-4 overflow-y-auto p-4">
           {messages.length === 0 ? (
             <div className="text-center text-zinc-500 py-10">
               No messages in this conversation
@@ -211,7 +211,7 @@ export default function ChatPage() {
         </div>
 
         {/* Input */}
-        <div className="mt-auto pt-4">
+        <div className="p-4 border-t border-zinc-800">
           <ChatInput onSend={handleSendMessage} />
         </div>
       </div>
