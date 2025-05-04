@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { SendIcon } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export default function ChatInput({
   onSend,
@@ -21,11 +23,11 @@ export default function ChatInput({
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-3xl mx-auto">
       <div className="relative flex items-center">
-        <textarea
+        <Input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type your message here..."
-          className="w-full rounded-xl border border-zinc-700 bg-zinc-900/70 backdrop-blur-sm px-4 py-3 pr-12 resize-none h-[56px] focus:outline-none focus:ring-2 focus:ring-zinc-600 placeholder-zinc-500 text-white"
+          className="pr-12 bg-zinc-900/70 backdrop-blur-sm border-zinc-700 text-white placeholder:text-zinc-500"
           onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {
               e.preventDefault();
@@ -33,13 +35,15 @@ export default function ChatInput({
             }
           }}
         />
-        <button
+        <Button
           type="submit"
-          className="absolute right-3 p-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-400 hover:text-white transition-colors"
+          size="icon"
+          variant="ghost"
+          className="absolute right-2 h-8 w-8 text-zinc-400 hover:text-white hover:bg-zinc-800"
           disabled={!input.trim()}
         >
           <SendIcon size={18} />
-        </button>
+        </Button>
       </div>
     </form>
   );

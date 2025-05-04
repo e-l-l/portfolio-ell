@@ -7,8 +7,8 @@ export default function GridBackground() {
         className="absolute inset-0"
         style={{
           backgroundImage: `
-            linear-gradient(to right, rgba(100, 100, 120, 0.1) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(100, 100, 120, 0.1) 1px, transparent 1px)
+            linear-gradient(to right, rgba(70, 70, 85, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(70, 70, 85, 0.1) 1px, transparent 1px)
           `,
           backgroundSize: "40px 40px",
           backgroundPosition: "center center",

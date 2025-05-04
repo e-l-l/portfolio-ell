@@ -1,4 +1,11 @@
 import ChatInput from "@/components/ChatInput";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -14,9 +21,11 @@ export default function Home() {
       </div>
 
       {/* Chat Input Section */}
-      <div className="w-full max-w-3xl glass-effect rounded-2xl p-8 mb-12">
-        <ChatInput />
-      </div>
+      <Card className="w-full max-w-3xl glass-effect border-zinc-800 mb-12 bg-zinc-900/70">
+        <CardContent className="p-8">
+          <ChatInput />
+        </CardContent>
+      </Card>
 
       {/* Features */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl w-full mt-8">
@@ -26,13 +35,14 @@ export default function Home() {
           { title: "Customizable", description: "Tailor to your needs" },
           { title: "24/7 Available", description: "Always ready to help" },
         ].map((feature, index) => (
-          <div
-            key={index}
-            className="p-4 rounded-xl titanium-gradient border border-zinc-800"
-          >
-            <h3 className="font-medium text-white">{feature.title}</h3>
-            <p className="text-sm text-zinc-400">{feature.description}</p>
-          </div>
+          <Card key={index} className="titanium-gradient border-zinc-800">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-white">{feature.title}</CardTitle>
+              <CardDescription className="text-zinc-400">
+                {feature.description}
+              </CardDescription>
+            </CardHeader>
+          </Card>
         ))}
       </div>
     </div>
