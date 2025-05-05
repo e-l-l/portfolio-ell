@@ -1,9 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import GridBackground from "@/components/GridBackground";
-import { ThemeProvider } from "@/components/ThemeProvider";
 // Force dark mode script runs on client only
 import "@/lib/force-dark-mode";
 
@@ -20,7 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Titanium Chat",
   description: "A sleek chat interface with titanium theme",
-  // Ensure color-scheme is set in metadata
+};
+
+export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
@@ -37,13 +38,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background text-foreground`}
       >
-        <ThemeProvider>
-          <GridBackground />
-          <Sidebar />
-          <main className="lg:ml-16 transition-all duration-300">
-            {children}
-          </main>
-        </ThemeProvider>
+        <GridBackground />
+        <Sidebar />
+        <main className="lg:ml-16 transition-all duration-300">{children}</main>
       </body>
     </html>
   );
