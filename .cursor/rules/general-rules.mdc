@@ -3,4 +3,7 @@ description:
 globs: 
 alwaysApply: true
 ---
-- Prefer using shadcn components
+- Use shadcn components whereever possible.
+- Maximise the reactivity of the UI. 
+- Use effects and animations as required.
+- Add cool three.js peices when you feel it will impact the visuals of the website.

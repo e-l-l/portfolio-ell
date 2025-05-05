@@ -98,6 +98,47 @@ body {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(70, 70, 80, 0.2);
   }
+
+  /* Simple cursor for typewriter effect */
+  .text-cursor::after {
+    content: "|";
+    display: inline;
+    color: white;
+    animation: cursor-blink 1s step-start infinite;
+  }
+
+  @keyframes cursor-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Animations for simple typewriter component */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+
+  /* Fade in animation for messages */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .message-animate {
+    animation: fade-in-up 0.5s ease-out forwards;
+  }
 }
 
 .dark {

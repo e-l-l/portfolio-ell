@@ -3,7 +3,7 @@
 import ChatSection from "./ChatSection";
 
 // Use a fixed reference date for all messages
-const BASE_DATE = "2023-05-15T10:00:00Z";
+const BASE_DATE = "2025-05-15T10:00:00Z";
 
 export default function ProjectsSection() {
   const messages = [

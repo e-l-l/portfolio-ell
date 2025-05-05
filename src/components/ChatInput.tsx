@@ -42,7 +42,7 @@ export default function ChatInput({
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type your message here..."
-          className={`resize-none pr-12 bg-zinc-900/70 backdrop-blur-sm border-zinc-700 text-white placeholder:text-zinc-500`}
+          className={`resize-none pr-12 bg-zinc-900/70 backdrop-blur-[2px] border-zinc-700 text-white placeholder:text-zinc-500`}
           style={{ minHeight }}
           onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {

@@ -21,7 +21,10 @@ export default function Home() {
 
       <div className="relative">
         {/* Hero Section */}
-        <section className="flex flex-col items-center justify-center min-h-screen p-4">
+        <section
+          id="hero"
+          className="flex flex-col items-center justify-center min-h-screen p-4 relative"
+        >
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 tracking-tight">
               Prathmesh Ghatol
@@ -72,7 +75,7 @@ export default function Home() {
                   }
                 }}
               >
-                <Card className="border-zinc-800/50 backdrop-blur-md bg-white/5 hover:bg-white/10 transition-colors h-full">
+                <Card className="border-zinc-800/50 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors h-full">
                   <CardHeader className="pb-2">
                     <CardTitle className="text-white/90">
                       {feature.title}
@@ -112,12 +115,12 @@ export default function Home() {
             <ExperienceSection />
           </div>
 
-          <div id="projects">
-            <ProjectsSection />
-          </div>
-
           <div id="skills">
             <SkillsSection />
+          </div>
+
+          <div id="projects">
+            <ProjectsSection />
           </div>
 
           <div id="education">
@@ -127,7 +130,7 @@ export default function Home() {
           {/* Footer */}
           <footer className="py-8 border-t border-zinc-800 text-center">
             <p className="text-zinc-500">
-              © 2023 Prathmesh Ghatol. All rights reserved.
+              © 2025 Prathmesh Ghatol. All rights reserved.
             </p>
           </footer>
         </div>

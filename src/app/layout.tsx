@@ -17,8 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Titanium Chat",
-  description: "A sleek chat interface with titanium theme",
+  title: "ell's portfolio",
+  description:
+    "This is ell, an AI/ML and Software Developer who also likes gaming and data.",
 };
 
 export const viewport: Viewport = {

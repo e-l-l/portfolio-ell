@@ -8,6 +8,7 @@ import {
   PlusIcon,
   Menu,
   Home,
+  GripVertical,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -51,6 +52,7 @@ export default function Sidebar() {
   // Handle dragging
   useEffect(() => {
     const handleMouseDown = (e: MouseEvent) => {
+      e.preventDefault();
       isDraggingRef.current = true;
     };
 
@@ -88,6 +90,11 @@ export default function Sidebar() {
     };
   }, []);
 
+  const toggleSidebar = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
     <>
       {/* Mobile toggle */}
@@ -96,7 +103,7 @@ export default function Sidebar() {
           <Button
             variant="outline"
             size="icon"
-            className="fixed top-4 left-4 z-40 rounded-md bg-zinc-900/50 backdrop-blur-lg text-gray-400 lg:hidden border-zinc-800"
+            className="fixed top-4 left-4 z-40 rounded-md bg-zinc-900/50 backdrop-blur-sm text-gray-400 lg:hidden border-zinc-800"
           >
             <Menu className="h-5 w-5" />
             <span className="sr-only">Toggle menu</span>
@@ -104,7 +111,7 @@ export default function Sidebar() {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="bg-zinc-900/95 backdrop-blur-md border-zinc-800 p-0"
+          className="bg-zinc-900/95 backdrop-blur-xs border-zinc-800 p-0"
         >
           <div className="flex flex-col h-full">
             {/* Home link */}
@@ -165,22 +172,33 @@ export default function Sidebar() {
         </SheetContent>
       </Sheet>
 
-      {/* Draggable sidebar toggle button (desktop only) */}
+      {/* Sidebar toggle with draggable handle (desktop only) */}
       <div
-        className="fixed z-50 hidden lg:flex flex-col items-center cursor-move"
+        className="fixed z-50 hidden lg:flex flex-col items-center"
         style={{
           top: `${draggablePosition}px`,
-          left: isCollapsed ? "0" : "288px", // Move with sidebar edge (272px = sidebar width 272px)
+          left: isCollapsed ? "0" : "288px",
           transition: "left 0.3s ease",
         }}
-        ref={dragRef}
       >
-        <div className="flex flex-col items-center p-1 rounded-r-md bg-zinc-900/95 backdrop-blur-md border-r border-t border-b border-zinc-800">
+        <div className="flex flex-col items-center rounded-r-md bg-zinc-900/95 backdrop-blur-xs border-r border-t border-b border-zinc-800">
+          {/* Separate drag handle */}
+          <div
+            ref={dragRef}
+            className="w-full h-8 flex items-center justify-center rounded-tr-md hover:bg-zinc-800/50 cursor-move p-1"
+          >
+            <GripVertical size={14} className="text-zinc-500" />
+          </div>
+
+          {/* Clear divider */}
+          <div className="w-full h-px bg-zinc-800" />
+
+          {/* Toggle button */}
           <Button
             variant="ghost"
             size="icon"
-            className="h-7 w-7 rounded-md text-gray-400 hover:bg-zinc-800"
-            onClick={() => setIsCollapsed(!isCollapsed)}
+            className="h-8 w-8 rounded-br-md rounded-bl-none rounded-tl-none rounded-tr-none text-gray-400 hover:bg-zinc-800"
+            onClick={toggleSidebar}
           >
             {isCollapsed ? (
               <ChevronRightIcon size={16} />
@@ -194,7 +212,7 @@ export default function Sidebar() {
       {/* Sidebar for desktop - collapsible */}
       <div
         className={cn(
-          "fixed inset-y-0 left-0 z-30 bg-zinc-900/90 backdrop-blur-md border-r border-zinc-800 transition-all duration-300 hidden lg:flex lg:flex-col",
+          "fixed inset-y-0 left-0 z-30 bg-zinc-900/90 backdrop-blur-xs border-r border-zinc-800 transition-all duration-300 hidden lg:flex lg:flex-col",
           isCollapsed ? "-translate-x-full" : "translate-x-0 w-72"
         )}
       >
