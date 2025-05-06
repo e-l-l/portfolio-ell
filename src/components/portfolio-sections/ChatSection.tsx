@@ -56,7 +56,7 @@ export default function ChatSection({ title, messages }: ChatSectionProps) {
       <div className="bg-zinc-900/50 backdrop-blur-xs rounded-xl p-6 border border-zinc-800/50">
         {/* Chat header */}
         <div className="border-b border-zinc-800 pb-4 mb-6">
-          <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+          <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-gray-400">
             {inView ? (
               <SimpleType text={title} speed={40} delay={300} />
             ) : (

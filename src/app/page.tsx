@@ -22,7 +22,7 @@ export default function Home() {
           className="flex flex-col items-center justify-center min-h-screen p-4 relative"
         >
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-gray-400 tracking-tight">
               Prathmesh Ghatol
             </h1>
             <p className="text-zinc-400 mt-2 text-lg">
@@ -85,7 +85,8 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="absolute bottom-10 animate-bounce">
+          <div className="absolute bottom-0 animate-[bounce_3s_infinite] flex flex-col items-center">
+            <div className="text-zinc-400 text-sm">Scroll Down</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

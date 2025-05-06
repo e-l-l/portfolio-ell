@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+- Always use --legacy-peer-deps when trying to install something using npm

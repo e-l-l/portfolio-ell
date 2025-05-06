@@ -212,7 +212,7 @@ export default function Sidebar() {
       {/* Sidebar for desktop - collapsible */}
       <div
         className={cn(
-          "fixed inset-y-0 left-0 z-30 bg-zinc-900/90 backdrop-blur-xs border-r border-zinc-800 transition-all duration-300 hidden lg:flex lg:flex-col",
+          "fixed inset-y-0 left-0 z-30 bg-zinc-900/50 backdrop-blur-xs border-r border-zinc-800 transition-all duration-300 hidden lg:flex lg:flex-col",
           isCollapsed ? "-translate-x-full" : "translate-x-0 w-72"
         )}
       >
