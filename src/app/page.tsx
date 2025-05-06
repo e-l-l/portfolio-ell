@@ -7,7 +7,6 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import ParticleSphereWrapper from "@/components/ParticleSphereWrapper";
 import ExperienceSection from "@/components/portfolio-sections/ExperienceSection";
 import ProjectsSection from "@/components/portfolio-sections/ProjectsSection";
 import SkillsSection from "@/components/portfolio-sections/SkillsSection";
@@ -16,10 +15,7 @@ import EducationSection from "@/components/portfolio-sections/EducationSection";
 export default function Home() {
   return (
     <>
-      {/* Background Particle Sphere */}
-      <ParticleSphereWrapper />
-
-      <div className="relative">
+      <div>
         {/* Hero Section */}
         <section
           id="hero"

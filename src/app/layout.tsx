@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import GridBackground from "@/components/GridBackground";
+import ParticleSphereWrapper from "@/components/ParticleSphereWrapper";
 // Force dark mode script runs on client only
 import "@/lib/force-dark-mode";
 
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background text-foreground`}
       >
+        <ParticleSphereWrapper />
         <GridBackground />
         <Sidebar />
         <main className="lg:ml-16 transition-all duration-300">{children}</main>
