@@ -1,89 +1,37 @@
 "use client";
 
-import ChatInput from "@/components/ChatInput";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+import { useState } from "react";
 import ExperienceSection from "@/components/portfolio-sections/ExperienceSection";
 import ProjectsSection from "@/components/portfolio-sections/ProjectsSection";
 import SkillsSection from "@/components/portfolio-sections/SkillsSection";
 import EducationSection from "@/components/portfolio-sections/EducationSection";
+import Intro from "@/components/Intro";
+import Hero from "@/components/Hero";
 
 export default function Home() {
+  const [introCompleted, setIntroCompleted] = useState(false);
+
+  // Handle intro completion
+  const handleIntroComplete = () => {
+    setIntroCompleted(true);
+  };
+
+  // Create a CSS class for the main content
+  const mainContentClass = `transition-opacity duration-500 ${
+    introCompleted ? "opacity-100" : "opacity-0"
+  }`;
+
   return (
     <>
-      <div>
+      {!introCompleted && <Intro onComplete={handleIntroComplete} />}
+
+      <div className={mainContentClass}>
         {/* Hero Section */}
         <section
           id="hero"
           className="flex flex-col items-center justify-center min-h-screen p-4 relative"
         >
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-gray-400 tracking-tight">
-              Prathmesh Ghatol
-            </h1>
-            <p className="text-zinc-400 mt-2 text-lg">
-              AI/ML Software Developer and Data Enthusiast
-            </p>
-          </div>
-
-          {/* Chat Input Section */}
-          <ChatInput minHeight="120px" />
-
-          {/* Feature Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl w-full mt-4">
-            {[
-              {
-                title: "Experiences",
-                description: "Professional work history",
-                href: "#experiences",
-              },
-              {
-                title: "Projects",
-                description: "Personal & team projects",
-                href: "#projects",
-              },
-              {
-                title: "Skills",
-                description: "Skills and technologies",
-                href: "#skills",
-              },
-              {
-                title: "Education",
-                description: "Academic background",
-                href: "#education",
-              },
-            ].map((feature, index) => (
-              <a
-                key={index}
-                href={feature.href}
-                className="block transition-transform hover:-translate-y-1"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.getElementById(
-                    feature.href.substring(1)
-                  );
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                <Card className="border-zinc-800/50 backdrop-blur-xs bg-white/5 hover:bg-white/10 transition-colors h-full">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-white/90">
-                      {feature.title}
-                    </CardTitle>
-                    <CardDescription className="text-zinc-400/80">
-                      {feature.description}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </a>
-            ))}
-          </div>
+          <Hero />
 
           <div className="absolute bottom-0 animate-[bounce_3s_infinite] flex flex-col items-center">
             <div className="text-zinc-400 text-sm">Scroll Down</div>

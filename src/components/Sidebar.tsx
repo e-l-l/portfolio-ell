@@ -44,7 +44,7 @@ const resumeSections = [
 ];
 
 export default function Sidebar() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [draggablePosition, setDraggablePosition] = useState<number>(100);
   const dragRef = useRef<HTMLDivElement>(null);
   const isDraggingRef = useRef<boolean>(false);

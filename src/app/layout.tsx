@@ -43,7 +43,7 @@ export default function RootLayout({
         <ParticleSphereWrapper />
         <GridBackground />
         <Sidebar />
-        <main className="lg:ml-16 transition-all duration-300">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

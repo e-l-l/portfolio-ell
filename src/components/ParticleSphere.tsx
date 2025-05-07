@@ -5,10 +5,18 @@ import * as THREE from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
-const ParticleCloud = () => {
+interface ParticleCloudProps {
+  count?: number;
+  size?: number;
+}
+
+export const ParticleCloud = ({
+  count = 3000,
+  size = 0.04,
+}: ParticleCloudProps) => {
   const particlesRef = useRef<THREE.Points>(null);
-  const originalRadiiRef = useRef<Float32Array>(new Float32Array(6000));
-  const particleCount = 3000;
+  const originalRadiiRef = useRef<Float32Array>(new Float32Array(count * 2));
+  const particleCount = count;
   const sphereRadius = 2; // Base radius of the sphere
 
   useFrame((state) => {
@@ -34,7 +42,7 @@ const ParticleCloud = () => {
       const normalizedZ = z / distance;
 
       // Get original radius from our ref
-      const originalRadius = originalRadii[i];
+      const originalRadius = originalRadiiRef.current[i];
 
       const waveFactorA = Math.sin(distance * 2 + time + i * 0.02) * 0.06;
       const waveFactorB =
@@ -105,7 +113,7 @@ const ParticleCloud = () => {
     colors[i3 + 2] = (greyValue + 0.05) * intensity; // B - Slight blue for glow effect
 
     // Vary particle sizes - larger particles have more glow effect
-    sizes[i] = 0.04 * (0.7 + glowFactor * 0.5 + Math.random() * 0.2);
+    sizes[i] = size * (0.7 + glowFactor * 0.5 + Math.random() * 0.2);
   }
 
   const geometry = new THREE.BufferGeometry();
@@ -116,7 +124,7 @@ const ParticleCloud = () => {
   return (
     <points ref={particlesRef} geometry={geometry}>
       <pointsMaterial
-        size={0.04}
+        size={size}
         vertexColors
         transparent
         depthWrite={false}
