@@ -19,17 +19,22 @@ export default function ProjectsSection() {
       id: 2,
       content: (
         <div className="space-y-4">
-          <p>I've worked on several projects. Here are some highlights:</p>
+          <p>
+            I've worked on several impactful projects. Here are a few
+            highlights:
+          </p>
 
           <div className="space-y-4 mt-3">
             <div className="bg-zinc-800/70 rounded-lg p-3">
-              <h4 className="font-medium">AI Image Generator</h4>
+              <h4 className="font-medium">
+                Lumen – Digital Transparency for Supply Chains
+              </h4>
               <p className="mt-1 text-sm">
-                A deep learning model that generates realistic images from text
-                descriptions using GANs.
+                Built a Web3 product to manage decentralized carbon emissions
+                for supply chains. Won Based India 2025 Hackathon.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
-                {["Python", "PyTorch", "React", "Flask"].map((tech, i) => (
+                {["Next.js", "Wagmi"].map((tech, i) => (
                   <span
                     key={i}
                     className="bg-zinc-700/60 text-zinc-300 px-2 py-0.5 rounded-md text-xs"
@@ -41,22 +46,56 @@ export default function ProjectsSection() {
             </div>
 
             <div className="bg-zinc-800/70 rounded-lg p-3">
-              <h4 className="font-medium">Smart Data Dashboard</h4>
+              <h4 className="font-medium">Car Crash & Price Prediction</h4>
               <p className="mt-1 text-sm">
-                Interactive data visualization platform with real-time analytics
-                and customizable widgets.
+                Developed a deep learning pipeline to classify car crash
+                severity and estimate repair costs.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
-                {["Next.js", "D3.js", "TypeScript", "MongoDB"].map(
-                  (tech, i) => (
-                    <span
-                      key={i}
-                      className="bg-zinc-700/60 text-zinc-300 px-2 py-0.5 rounded-md text-xs"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
+                {["Python", "TensorFlow"].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-zinc-700/60 text-zinc-300 px-2 py-0.5 rounded-md text-xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-zinc-800/70 rounded-lg p-3">
+              <h4 className="font-medium">Customer Support Chatbot</h4>
+              <p className="mt-1 text-sm">
+                Built an LLM-powered chatbot that responds to support queries
+                using document embeddings.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {["Python", "HuggingFace"].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-zinc-700/60 text-zinc-300 px-2 py-0.5 rounded-md text-xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-zinc-800/70 rounded-lg p-3">
+              <h4 className="font-medium">Attendance Management System</h4>
+              <p className="mt-1 text-sm">
+                Created a fully automated system that tracks attendance,
+                improving accuracy and saving 1+ teacher-hour daily.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {["Next.js", "Node.js"].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-zinc-700/60 text-zinc-300 px-2 py-0.5 rounded-md text-xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -65,121 +104,6 @@ export default function ProjectsSection() {
       sender: "ai" as const,
       timestamp: new Date(
         new Date(BASE_DATE).getTime() - 1000 * 60 * 14
-      ).toISOString(),
-    },
-    {
-      id: 3,
-      content: "Can you tell me more about the AI Image Generator?",
-      sender: "user" as const,
-      timestamp: new Date(
-        new Date(BASE_DATE).getTime() - 1000 * 60 * 13
-      ).toISOString(),
-    },
-    {
-      id: 4,
-      content: (
-        <div className="space-y-3">
-          <p>
-            The AI Image Generator is one of my most ambitious projects. Here
-            are more details:
-          </p>
-          <ul className="list-disc list-inside space-y-1 pl-2 text-sm">
-            <li>
-              Implemented a Generative Adversarial Network (GAN) architecture
-              for high-quality image synthesis
-            </li>
-            <li>
-              Trained the model on a dataset of over 100,000 images across
-              multiple categories
-            </li>
-            <li>
-              Built a React-based frontend that allows users to input text
-              descriptions
-            </li>
-            <li>
-              Developed a Flask API that processes requests and returns
-              generated images
-            </li>
-            <li>
-              Deployed the solution on AWS using Docker containers and CI/CD
-              pipelines
-            </li>
-          </ul>
-          <p className="mt-2 text-sm">
-            The project received recognition at a local AI hackathon and is now
-            being used by designers for rapid prototyping.
-          </p>
-        </div>
-      ),
-      sender: "ai" as const,
-      timestamp: new Date(
-        new Date(BASE_DATE).getTime() - 1000 * 60 * 12
-      ).toISOString(),
-    },
-    {
-      id: 5,
-      content: "Do you have any other notable projects?",
-      sender: "user" as const,
-      timestamp: new Date(
-        new Date(BASE_DATE).getTime() - 1000 * 60 * 11
-      ).toISOString(),
-    },
-    {
-      id: 6,
-      content: (
-        <div className="space-y-4">
-          <p>Yes, I have a couple more projects worth mentioning:</p>
-
-          <div className="space-y-4 mt-3">
-            <div className="bg-zinc-800/70 rounded-lg p-3">
-              <h4 className="font-medium">Natural Language Processor</h4>
-              <p className="mt-1 text-sm">
-                Built a system that understands and generates human language
-                using transformer models.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-2">
-                {["Python", "TensorFlow", "BERT", "FastAPI"].map((tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-zinc-700/60 text-zinc-300 px-2 py-0.5 rounded-md text-xs"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-zinc-800/70 rounded-lg p-3">
-              <h4 className="font-medium">Stock Market Predictor</h4>
-              <p className="mt-1 text-sm">
-                Machine learning algorithm that predicts stock price movements
-                based on historical data.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-2">
-                {["Python", "Scikit-learn", "Pandas", "Plotly"].map(
-                  (tech, i) => (
-                    <span
-                      key={i}
-                      className="bg-zinc-700/60 text-zinc-300 px-2 py-0.5 rounded-md text-xs"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
-            </div>
-          </div>
-
-          <p className="text-sm">
-            Each of these projects incorporated best practices in software
-            development, including thorough testing, documentation, and version
-            control.
-          </p>
-        </div>
-      ),
-      sender: "ai" as const,
-      timestamp: new Date(
-        new Date(BASE_DATE).getTime() - 1000 * 60 * 10
       ).toISOString(),
     },
   ];

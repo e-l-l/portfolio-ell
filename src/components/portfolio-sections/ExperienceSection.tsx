@@ -19,55 +19,73 @@ export default function ExperienceSection() {
       id: 2,
       content: (
         <div className="space-y-4">
-          <p>Sure! Here's a summary of my professional experience:</p>
+          <p>Absolutely! Here's a snapshot of my professional experience:</p>
 
           <div className="space-y-3 mt-3">
             <div className="bg-zinc-800/70 rounded-lg p-3">
               <div className="flex justify-between items-start">
                 <div>
-                  <h4 className="font-medium">AI Software Engineer</h4>
-                  <p className="text-xs text-zinc-400">Tech Solutions Inc.</p>
+                  <h4 className="font-medium">
+                    Founding AI/ML & Software Engineer
+                  </h4>
+                  <p className="text-xs text-zinc-400">Niti AI</p>
                 </div>
                 <span className="text-xs border border-zinc-700 rounded px-2 py-1">
-                  2022 - Present
+                  Aug 2023 - Present
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Developed machine learning models for computer vision
-                applications. Implemented deep learning architectures using
-                PyTorch and TensorFlow.
+                Built scalable AI systems that increased CTR and delivered
+                production-grade ML modules. Created ultra-light SDKs and
+                optimized AI pipelines for 5× faster execution.
               </p>
             </div>
 
             <div className="bg-zinc-800/70 rounded-lg p-3">
               <div className="flex justify-between items-start">
                 <div>
-                  <h4 className="font-medium">Data Scientist</h4>
-                  <p className="text-xs text-zinc-400">Data Insights Corp</p>
+                  <h4 className="font-medium">Data Analyst Intern</h4>
+                  <p className="text-xs text-zinc-400">Think360 AI</p>
                 </div>
                 <span className="text-xs border border-zinc-700 rounded px-2 py-1">
-                  2020 - 2022
+                  Jun 2023 - Aug 2023
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Performed data analysis and built predictive models. Created
-                data visualizations and dashboards to communicate insights.
+                Built LLM-based chatbots, Power BI dashboards, and fraud
+                detection systems to improve SEO.
               </p>
             </div>
 
             <div className="bg-zinc-800/70 rounded-lg p-3">
               <div className="flex justify-between items-start">
                 <div>
-                  <h4 className="font-medium">Software Developer Intern</h4>
-                  <p className="text-xs text-zinc-400">Web Innovations</p>
+                  <h4 className="font-medium">Data Analyst Intern</h4>
+                  <p className="text-xs text-zinc-400">GetWYLD</p>
                 </div>
                 <span className="text-xs border border-zinc-700 rounded px-2 py-1">
-                  2019 - 2020
+                  Nov 2022 - Dec 2022
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Contributed to full-stack web applications using React and
-                Node.js. Implemented responsive UI components and RESTful APIs.
+                Automated dashboards for performance insights and managed data
+                across multiple pipelines.
+              </p>
+            </div>
+
+            <div className="bg-zinc-800/70 rounded-lg p-3">
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="font-medium">Software Engineer Intern</h4>
+                  <p className="text-xs text-zinc-400">BinaryDots Fretbox</p>
+                </div>
+                <span className="text-xs border border-zinc-700 rounded px-2 py-1">
+                  Aug 2022 - Nov 2022
+                </span>
+              </div>
+              <p className="mt-2 text-sm">
+                Developed Flutter modules and fixed major issues to improve UX
+                and application stability.
               </p>
             </div>
           </div>
@@ -80,7 +98,7 @@ export default function ExperienceSection() {
     },
     {
       id: 3,
-      content: "What were your main responsibilities at Tech Solutions?",
+      content: "What were your main responsibilities at Niti AI?",
       sender: "user" as const,
       timestamp: new Date(
         new Date(BASE_DATE).getTime() - 1000 * 60 * 8
@@ -90,25 +108,26 @@ export default function ExperienceSection() {
       id: 4,
       content: (
         <div>
-          <p>At Tech Solutions Inc., my main responsibilities include:</p>
+          <p>At Niti AI, my core responsibilities include:</p>
           <ul className="list-disc list-inside mt-2 space-y-1 pl-2">
             <li>
-              Designing and implementing deep learning models for image
-              classification and object detection
+              Designing and deploying machine learning models that improved CTR
+              by up to 1%
             </li>
             <li>
-              Optimizing model performance and deploying to production
+              Building platform-agnostic SDKs that integrate in under 5 minutes
+            </li>
+            <li>
+              Delivering production-ready AI modules for high-traffic user
               environments
             </li>
             <li>
-              Collaborating with cross-functional teams to integrate AI
-              solutions into existing products
+              Optimizing workflows for speed and scalability—up to 5×
+              performance boosts
             </li>
             <li>
-              Mentoring junior developers and leading technical discussions
-            </li>
-            <li>
-              Staying current with the latest research and technologies in AI/ML
+              Collaborating with cross-functional teams to turn business
+              problems into ML-driven solutions
             </li>
           </ul>
         </div>

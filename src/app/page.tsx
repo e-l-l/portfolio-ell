@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   // Create a CSS class for the main content
-  const mainContentClass = `transition-opacity duration-500 ${
+  const mainContentClass = `transition-opacity duration-2000 ${
     introCompleted ? "opacity-100" : "opacity-0"
   }`;
 

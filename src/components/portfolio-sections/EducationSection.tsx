@@ -20,8 +20,8 @@ export default function EducationSection() {
       content: (
         <div className="space-y-4">
           <p>
-            I've pursued a strong foundation in computer science through my
-            education:
+            I completed my undergraduate studies with a strong focus on
+            technology and data:
           </p>
 
           <div className="space-y-4 mt-2">
@@ -29,37 +29,37 @@ export default function EducationSection() {
               <div className="flex justify-between items-start">
                 <div>
                   <h4 className="font-medium">
-                    Master of Science in Computer Science
+                    B.Tech in Information Technology
                   </h4>
                   <p className="text-xs text-zinc-400">
-                    University of Technology
+                    University of Mumbai (D.J. Sanghvi College of Engineering)
                   </p>
                 </div>
                 <span className="text-xs border border-zinc-700 rounded px-2 py-1">
-                  2018 - 2020
+                  Aug 2020 – May 2024
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Specialized in Artificial Intelligence and Machine Learning.
-                Thesis on deep learning applications in computer vision.
+                Graduated with a CGPA of <strong>9.1</strong> and a Minor in{" "}
+                <strong>Data Science</strong>.
               </p>
             </div>
 
             <div className="bg-zinc-800/70 rounded-lg p-3">
               <div className="flex justify-between items-start">
                 <div>
-                  <h4 className="font-medium">
-                    Bachelor of Engineering in Computer Science
-                  </h4>
-                  <p className="text-xs text-zinc-400">Engineering Institute</p>
+                  <h4 className="font-medium">Minor in Data Science</h4>
+                  <p className="text-xs text-zinc-400">
+                    University of Mumbai (D.J. Sanghvi College of Engineering)
+                  </p>
                 </div>
                 <span className="text-xs border border-zinc-700 rounded px-2 py-1">
-                  2014 - 2018
+                  Aug 2022 – May 2024
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Graduated with honors. Completed several projects in software
-                development and data analysis.
+                Specialized in machine learning, data mining, and statistical
+                analysis.
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function EducationSection() {
     },
     {
       id: 3,
-      content: "What was your Master's thesis about?",
+      content: "Did you do any notable coursework or specializations?",
       sender: "user" as const,
       timestamp: new Date(
         new Date(BASE_DATE).getTime() - 1000 * 60 * 23
@@ -82,38 +82,21 @@ export default function EducationSection() {
       id: 4,
       content: (
         <div className="space-y-3">
-          <p>
-            My Master's thesis was titled "Advanced Neural Networks for
-            Real-time Object Detection in Dynamic Environments."
-          </p>
-          <p className="text-sm">
-            The research focused on improving object detection algorithms for
-            use in autonomous vehicles and robotics. Specifically, I:
-          </p>
+          <p>Yes, my degree covered both foundational and advanced topics:</p>
           <ul className="list-disc list-inside space-y-1 pl-2 text-sm">
-            <li>
-              Developed a modified YOLO architecture with attention mechanisms
-            </li>
-            <li>
-              Achieved 15% improvement in detection accuracy while maintaining
-              real-time performance
-            </li>
-            <li>
-              Created a novel data augmentation pipeline for enhancing training
-              with limited data
-            </li>
-            <li>
-              Implemented the system on embedded hardware for edge deployment
-            </li>
-            <li>
-              Validated results through extensive testing in various lighting
-              and weather conditions
-            </li>
+            <li>Data Structures</li>
+            <li>Web Development</li>
+            <li>Algorithms</li>
+            <li>Computer Networks</li>
+            <li>Statistics</li>
+            <li>Database Management Systems (DBMS)</li>
+            <li>Artificial Intelligence</li>
+            <li>Soft Computing</li>
+            <li>Data Science (Minor Degree Focus)</li>
           </ul>
           <p className="text-sm mt-2">
-            The thesis received recognition from the department and portions
-            were later published in an international conference on computer
-            vision.
+            These subjects gave me a solid technical foundation and enabled me
+            to apply AI and data-driven solutions to real-world problems.
           </p>
         </div>
       ),
