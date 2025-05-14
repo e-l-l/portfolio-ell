@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "./button";
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./sheet";
+import { Button } from "./ui/button";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Mail, MessageSquareText } from "lucide-react";

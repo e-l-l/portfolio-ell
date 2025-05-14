@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GridBackground from "@/components/GridBackground";
 import ParticleSphereWrapper from "@/components/ParticleSphereWrapper";
-import { ContactButton } from "@/components/ui/ContactButton";
+import { ContactButton } from "@/components/ContactButton";
 // Force dark mode script runs on client only
 import "@/lib/force-dark-mode";
 

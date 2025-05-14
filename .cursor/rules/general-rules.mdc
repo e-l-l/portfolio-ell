@@ -4,6 +4,7 @@ globs:
 alwaysApply: true
 ---
 - Use shadcn components whereever possible.
+- Use the npm command to add them, dont write them yourself
 - Maximise the reactivity of the UI. 
 - Use effects and animations as required.
 - Add cool three.js peices when you feel it will impact the visuals of the website.

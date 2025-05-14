@@ -299,7 +299,7 @@ const TerminalText = ({ onComplete }: { onComplete: () => void }) => {
           {completedLines.map((line, index) => (
             <div
               key={`complete-${index}`}
-              className={`font-mono ${index === 0 ? "text-red-500" : ""}`}
+              className={`font-mono ${index === 0 ? "text-yellow-500" : ""}`}
               style={{ fontFamily: "var(--font-geist-mono)" }}
             >
               {line}
@@ -308,7 +308,7 @@ const TerminalText = ({ onComplete }: { onComplete: () => void }) => {
 
           {/* Current typing line */}
           {!allLinesComplete && isTyping && (
-            <div className={lineToDisplay === 0 ? "text-red-500" : ""}>
+            <div className={lineToDisplay === 0 ? "text-yellow-500" : ""}>
               <TypingText
                 text={terminalLines[lineToDisplay]}
                 delay={50}
