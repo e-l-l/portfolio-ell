@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio | ell
 
-## Getting Started
+Welcome to my professional portfolio built with Next.js! This showcase highlights my skills, projects, and experience as a developer.
 
-First, run the development server:
+![Portfolio Preview](public/preview.png)
+
+## ✨ Features
+
+- **Responsive Design** - Looks great on all devices
+- **Interactive UI** - Engaging user experience with smooth animations
+- **Project Showcase** - Detailed project cards with live demos and code links
+- **Skills Section** - Visual representation of technical skills
+- **Contact Form** - Easy way for potential clients/employers to reach out
+- **Dark/Light Mode** - Toggle between color schemes
+- **3D Elements** - Interactive three.js components for visual interest
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Animations**: Framer Motion
+- **3D Rendering**: Three.js
+- **Deployment**: Vercel
+- **Form Handling**: React Hook Form
+- **CMS**: (Optional integration with your CMS of choice)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.0 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/portfolio-ell.git
+cd portfolio-ell
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The portfolio is designed to be easily customizable:
 
-## Learn More
+- Update your information in the `data` directory
+- Modify theme colors in `tailwind.config.js`
+- Add or remove sections by editing the components
+- Configure animations and transitions in the respective component files
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+portfolio-ell/
+├── app/               # Next.js app router pages
+├── components/        # Reusable UI components
+├── data/              # Portfolio content and configuration
+├── lib/               # Utility functions and hooks
+├── public/            # Static assets
+├── styles/            # Global styles
+└── types/             # TypeScript type definitions
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Contact
 
-## Deploy on Vercel
+- **Website**: [yourwebsite.com](https://yourwebsite.com)
+- **Email**: your.email@example.com
+- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
