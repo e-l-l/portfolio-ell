@@ -8,3 +8,4 @@ alwaysApply: true
 - Maximise the reactivity of the UI. 
 - Use effects and animations as required.
 - Add cool three.js peices when you feel it will impact the visuals of the website.
+- Always account for mobile responsiveness along with desktop.

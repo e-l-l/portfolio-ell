@@ -43,6 +43,11 @@ export const defaultFeatureCards: FeatureCard[] = [
     description: "Academic background",
     href: "#education",
   },
+  {
+    title: "Contact",
+    description: "Get in touch with me",
+    href: "#contact",
+  },
 ];
 
 export default function FeatureCards({
@@ -72,13 +77,13 @@ export default function FeatureCards({
 
   return (
     <div
-      className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full ${className}`}
+      className={`flex flex-row flex-wrap md:flex-nowrap gap-4 w-full overflow-x-auto py-2 ${className}`}
     >
       {cards.map((card, index) => (
         <a
           key={index}
           href={card.href}
-          className={`block transition-transform hover:-translate-y-1 ${itemClassName}`}
+          className={`flex-grow min-w-[250px] md:min-w-0 transition-transform hover:-translate-y-1 ${itemClassName}`}
           onClick={(e) => handleCardClick(e, card.href, index)}
         >
           <Card

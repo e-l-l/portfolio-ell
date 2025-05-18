@@ -35,9 +35,11 @@ export default function ExperienceSection() {
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Built scalable AI systems that increased CTR and delivered
-                production-grade ML modules. Created ultra-light SDKs and
-                optimized AI pipelines for 5× faster execution.
+                Boosted CTR by up to 1% using AI-driven RAG and recommendation
+                systems, generating 60K+ monthly clicks. Built platform-agnostic
+                SDKs (React, React Native, Flutter, Android) enabling
+                integrations in under 5 minutes. Developed a no-code UI editor
+                and orchestrated AI workflows using LangGraph and Next.js.
               </p>
             </div>
 
@@ -52,8 +54,10 @@ export default function ExperienceSection() {
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Built LLM-based chatbots, Power BI dashboards, and fraud
-                detection systems to improve SEO.
+                Built LLM-powered chatbots for support and SQL generation.
+                Developed interactive HR dashboards using Power BI and built
+                fraud detection systems to flag malicious apps, enhancing client
+                SEO.
               </p>
             </div>
 
@@ -68,8 +72,8 @@ export default function ExperienceSection() {
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Automated dashboards for performance insights and managed data
-                across multiple pipelines.
+                Automated reporting dashboards enabling one-click performance
+                overviews for business stakeholders.
               </p>
             </div>
 
@@ -84,8 +88,8 @@ export default function ExperienceSection() {
                 </span>
               </div>
               <p className="mt-2 text-sm">
-                Developed Flutter modules and fixed major issues to improve UX
-                and application stability.
+                Enhanced app UX and stability by developing Flutter modules and
+                resolving critical bugs that prevented startup failures.
               </p>
             </div>
           </div>
@@ -111,23 +115,37 @@ export default function ExperienceSection() {
           <p>At Niti AI, my core responsibilities include:</p>
           <ul className="list-disc list-inside mt-2 space-y-1 pl-2">
             <li>
-              Designing and deploying machine learning models that improved CTR
-              by up to 1%
+              Designing AI-driven RAG and recommendation systems that boosted
+              CTR by up to 1%, generating 60K+ monthly clicks
             </li>
             <li>
-              Building platform-agnostic SDKs that integrate in under 5 minutes
+              Building super-slim platform-agnostic SDKs (React, React Native,
+              Flutter, Android) enabling integrations in under 5 minutes
             </li>
             <li>
-              Delivering production-ready AI modules for high-traffic user
-              environments
+              Developing a no-code UI editor with drag-and-drop and inline
+              editing capabilities
             </li>
             <li>
-              Optimizing workflows for speed and scalability—up to 5×
-              performance boosts
+              Orchestrating AI workflows using LangGraph, FastAPI, and Next.js
+              with human-in-the-loop logic
             </li>
             <li>
-              Collaborating with cross-functional teams to turn business
-              problems into ML-driven solutions
+              Designing a resilient LLM orchestration system that intelligently
+              routes requests across models (OpenAI, Anthropic, Gemini) for
+              optimal availability
+            </li>
+            <li>
+              Creating Growth Agents to auto-select and deploy effective growth
+              experiences tailored to business goals
+            </li>
+            <li>
+              Building GenUI: a system that generates frontend & backend
+              end-to-end user journeys from a single prompt
+            </li>
+            <li>
+              Developing Figma plugins and an HTML parser to convert designs
+              into editable UI blocks on-platform
             </li>
           </ul>
         </div>

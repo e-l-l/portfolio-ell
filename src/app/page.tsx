@@ -7,6 +7,7 @@ import SkillsSection from "@/components/portfolio-sections/SkillsSection";
 import EducationSection from "@/components/portfolio-sections/EducationSection";
 import Intro from "@/components/Intro";
 import Hero from "@/components/Hero";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   const [introCompleted, setIntroCompleted] = useState(false);
@@ -71,14 +72,10 @@ export default function Home() {
           <div id="education">
             <EducationSection />
           </div>
-
-          {/* Footer */}
-          <footer className="py-8 border-t border-zinc-800 text-center">
-            <p className="text-zinc-500">
-              © 2025 Prathmesh Ghatol. All rights reserved.
-            </p>
-          </footer>
         </div>
+
+        {/* Footer with Contact Section */}
+        <Footer />
       </div>
     </>
   );

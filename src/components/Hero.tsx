@@ -39,9 +39,7 @@ export default function Hero() {
       </div>
 
       {/* Feature Cards */}
-      <div>
-        <FeatureCards />
-      </div>
+      <FeatureCards />
     </div>
   );
 }
