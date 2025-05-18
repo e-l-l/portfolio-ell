@@ -33,4 +33,5 @@ portfolio-ell/
 
 ## Contact
 
-- GitHub: [yourusername](https://github.com/yourusername)
+- LinkedIn: [https://www.linkedin.com/in/prathmeshGhatol/](https://www.linkedin.com/in/prathmeshGhatol/)
+- Mail: [Prathmesh Ghatol](mailto:pratham1986@gmail.com)
