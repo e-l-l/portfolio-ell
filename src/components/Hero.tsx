@@ -3,6 +3,7 @@
 import React from "react";
 import ChatInput from "@/components/ChatInput";
 import FeatureCards from "@/components/FeatureCards";
+import { AlertTriangle } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -21,7 +22,20 @@ export default function Hero() {
 
       {/* Chat Input */}
       <div className="mb-6">
+        {/* Commented out for now
         <ChatInput minHeight="120px" />
+        */}
+        <div className="w-full max-w-3xl mx-auto">
+          <div className="relative flex items-center justify-center p-6 bg-zinc-900/70 backdrop-blur-[2px] border border-zinc-700 rounded-md">
+            <div className="flex items-center space-x-3">
+              <AlertTriangle size={18} className="text-zinc-500" />
+              <code className="text-lg font-medium text-zinc-400 tracking-widest font-mono">
+                WORK IN PROGRESS
+              </code>
+              <AlertTriangle size={18} className="text-zinc-500" />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Feature Cards */}
