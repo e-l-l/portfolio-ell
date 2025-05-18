@@ -34,4 +34,4 @@ portfolio-ell/
 ## Contact
 
 - LinkedIn: [https://www.linkedin.com/in/prathmeshGhatol/](https://www.linkedin.com/in/prathmeshGhatol/)
-- Mail: [Prathmesh Ghatol](mailto:pratham1986@gmail.com)
+- Mail: [pratham1986@gmail.com](mailto:pratham1986@gmail.com)
